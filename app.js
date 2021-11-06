@@ -38,13 +38,13 @@ const main = async()=>{
         const clima = await busquedas.climaLugar(lugarSelecionado.lat, lugarSelecionado.long);
         //mostrar resultados
         console.log('\ninformacion de la ciudad\n')
-        console.log(`Nombre de la ciudad: `.green+`${lugarSelecionado.nombre}`.white)
-        console.log(`Cielo actual: `.green+` ${clima.desc}`.white)
+        console.log(`Nombre de la ciudad: `.green + `${lugarSelecionado.nombre}`.white)
+        console.log(`Cielo actual: `.green + ` ${clima.desc}`.white)
         console.log(`Actual: `.yellow + `${clima.temp}`.white)
-        console.log(`Maxima: `.red +`${clima.max}`.white)
-        console.log(`Minima: `.blue +`${clima.min}`.white)
-        console.log(`Lat: `.green`${lugarSelecionado.lat}`.white)
-        console.log(`Long: `.green+` ${lugarSelecionado.long}`.white)
+        console.log(`Maxima: `.red + `${clima.max}`.white)
+        console.log(`Minima: `.blue + `${clima.min}`.white)
+        console.log(`Lat: `.green + `${lugarSelecionado.lat}`.white)
+        console.log(`Long: `.green + ` ${lugarSelecionado.long}`.white)
         
         break;
         case 2: 
@@ -65,7 +65,8 @@ const main = async()=>{
          await pausa()}
         
 }while(opt !== 0)
-
+console.clear();
+console.log("{Ejecucion Finalizada}".green)
 
 }
 
